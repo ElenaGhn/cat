@@ -1,0 +1,38 @@
+.card {
+  min-height: 400px;
+  overflow: hidden;
+  position: relative;
+
+  img {
+    width: 100%;
+  }
+  p {
+    padding-left: 16px;
+    padding-right: 16px;
+    color: rgb(61, 43, 43);
+    font-size: 20px;
+  }
+  button {
+    width: 50%;
+    position: absolute;
+    bottom: 0;
+    height: 32px;
+    margin: 1px;
+    background-color: rgb(251, 240, 240);
+    border: unset;
+    border-top: 1px solid black;
+    border-radius: 7px;
+    cursor: pointer;
+    &:first-child {
+      left: 0;
+    }
+    &:last-child {
+      right: 0;
+      border-left: 1px solid black;
+    }
+    &:hover {
+      background-color: rgb(70, 66, 66);
+      color: white;
+    }
+  }
+}

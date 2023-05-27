@@ -1,0 +1,8 @@
+<app-profile-row></app-profile-row>
+<div class="margin-bottom-16"><b>Friend's Suggestions</b></div>
+<app-profile-row
+  *ngFor="let i of [0, 1, 2, 3]"
+  [names]="names[i]"
+  [description]="texts[i]"
+  [img]="images[i]"
+></app-profile-row>
